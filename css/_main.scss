@@ -1,4 +1,6 @@
 
+
+
 .main__content{
   display: flex;
   gap: 100px;
@@ -21,9 +23,23 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
   }
 }
+.figur__box{
+  @media (max-width: 1110px){
+    order: 2;
+  }
+}
 
 .main__text{
   max-width: 500px;
+  @media (max-width: 1110px){
+    order: 1;
+  }
+}
+
+.part__two{
+  @media (max-width: 1110px){
+    order: 3;
+  }
 }
 
 .main__text-titel{
@@ -35,7 +51,7 @@
 
 .main__text-info{
   color: white;
-  font-size: clamp(12px, 5vw - 1rem, 20px);
+  font-size: 14px;
   padding-block-end: 20px;
 }
 
@@ -51,6 +67,7 @@
 }
 
 
+
 .media ul {
   position: absolute;
   bottom: 250px;
@@ -58,13 +75,70 @@
   transform: rotate(-90deg);
 }
 
-.media ul li {
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  display: inline-block;
-  padding: 0 30px;
-  a{
-    color: white;
+.media {
+  .face{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    &::before{
+      content: "";
+      background-image: url(../images/main/Vector7.svg);
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
   }
+  .inst{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    &::before{
+      content: "";
+      background-image: url(../images/main/IMAGE4.svg);
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+  .gmail{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    &::before{
+      content: "";
+      background-image: url(../images/main/IMAGE3.svg);
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+  
+    }
+  }
+  li{
+    margin-bottom: 10px;
+    a{
+      color: #191921;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      display: inline-block;
+      padding: 20px 0px;
+    }
+  }
+
 }
