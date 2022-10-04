@@ -60,5 +60,13 @@ TweenMax.to('.left', 2, {
   })
 
 
+  new fullpage('#fullpage', {
+    autoScrolling:true,
+    navigation:true,
+    scrollingSpeed:700,
+    controlArrows:false,
+    slidesNavigation:true,
+});
+
 
   
