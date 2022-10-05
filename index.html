@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css" integrity="sha512-NGRhMiWY9pf5z8PLens7/u+LLwIPAu1dhJ7u9sHRWIo8TKrVbKiWlRdYRH3pVDCZA10zmobo+PBLGeLOREklBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css" integrity="sha512-NGRhMiWY9pf5z8PLens7/u+LLwIPAu1dhJ7u9sHRWIo8TKrVbKiWlRdYRH3pVDCZA10zmobo+PBLGeLOREklBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,29 +23,28 @@
     <div class="overlay third"></div>
 
 
-<div id="fullpage">
+  <header class="header">
+    <div class="container header__container">
+      
+      <a href="#" class="logo header__left">
+        <!-- <img class="" src="images/header/logo.svg" alt="logo"> -->
+      </a>
+      <nav class="nav  header__right" data-nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Our work</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Services and prices</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+        </ul>
+      </nav>
+  
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
 
  <section class="main section">
 
-<header class="header">
-  <div class="container header__container">
-    
-    <a href="#" class="logo header__left">
-      <!-- <img class="" src="images/header/logo.svg" alt="logo"> -->
-    </a>
-    <nav class="nav  header__right" data-nav>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Our work</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Services and prices</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
-      </ul>
-    </nav>
-
-    <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
-      <span class="burger__line"></span>
-    </button>
-  </div>
-</header>
   <div class="container">
 
 
@@ -139,74 +138,86 @@
 <section class="info section">
   <div class="container">
 
-    <div class="info__content slide">
-      <div class="inner__box">
-      <figure class="figur__box-two" >
-        <div class="img__box">
-        <img  src="images/info/IMAGE.png"
-              alt="Слон на фоне заката">
+    <div class="card slide" data-state="#about">
+      <div class="card-header">
+        <!-- <div class="card-cover" style="background-image: url(./images/main/2022-10-03\ 10.00.11.jpg)"></div> -->
+        <img class="card-avatar" src="images/info/2022-10-05 10.20.07.jpg" alt="avatar" />
+      </div>
+      <div class="card-main">
+        <div class="card-section is-active" id="about">
+          <div class="card-content">
+            <div class="card-subtitle">
+              <h2>ПРО МЕНЕ</h2>
             </div>
-        <figcaption class="img__box-text-two">РЕКРУТЕР / HR
-    </figcaption>
-      </figure>
-      <div class="info__text">
-        <h2 class="info__text-titel">ПРО МЕНЕ</h2>
-        <p class="info__p">
-          Дата народження: 17.06.1998
-          Місце проживання: м.Одеса,
-          Суворовський район. Наразі проживаю у Німеччині (з приводу агресії росії в Україні, готова повернутися знову до України)          
-        </p>
+            <p class="card-desc">Дата народження: 17.06.1998
+              Місце проживання: м.Одеса,
+              Суворовський район. Наразі проживаю у Німеччині (з приводу агресії росії в Україні, готова повернутися знову до України)   
+            </p>
+            
+          </div>
+
+        </div>
+        <div class="card-section" id="experience">
+          <div class="card-content">
+            <div class="card-subtitle">WORK EXPERIENCE</div>
+            <div class="card-timeline">
+              <div class="card-item" data-year="2016">
+                <div class="card-item-title">
+                  <p>ПРАЦЮВАЛА В КОМПАНІЇ ІГРОВИХ КІМНАТ "МІСТО ІГРАШОК" НА ДАНИЙ МОМЕНТ" TOMMY LIFE </p>
+                </div>
+                <div class="card-item-desc">
+                  <p>НА РІЗНИХ ПОСАДАХ.</p>
+                </div>
+              </div>
+              <div class="card-item" data-year="2017">
+                <div class="card-item-title">
+                  <p>НЯНЯ ДИТЯЧОГО МАЙДАНЧИКА.</p>
+                </span></div>
+              </div>
+              <div class="card-item" data-year="2018">
+                <div class="card-item-title">
+                  <p>
+                    ОРГАНІЗАТОР СВЯТ.
+                  </p>
+                </div>
+              </div>
+              <div class="card-item" data-year="2020">
+                <div class="card-item-title"><p>
+                  ДИРЕКТОР. ВЛАСНИЙ ЦЕНТР РОЗВИТКУ BABY BOSS
+                </p></div>
+              </div>
+              <div class="card-item" data-year="01.11.2020">
+                <div class="card-item-title"><p>
+                  ОСОБИСТИЙ АССИСТЕНТ (ВІДДАЛЕНО) У "TOMMY LIFE"
+                </p></div>
+              </div>
+              <div class="card-item" data-year="14.07.2022">
+                <div class="card-item-title"><p>
+                  ДИРЕКТОР ТОВ «МЕРЕЖА ДИТЯЧОГО ДОЗВІЛЛЯ» -ЗВІЛЬНЕННЯ ЗА ВЛАСНИМ БАЖАННЯМ.
+                </p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-section" id="contact">
+          <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, similique dolore? Molestias sunt exercitationem repellat labore consequatur, tenetur doloribus rem. Rem minima temporibus nobis sapiente eveniet aliquid ipsa possimus recusandae!</h2>
+        </div>
+        <div class="card-buttons">
+          <button data-section="#about" class="is-active">ABOUT</button>
+          <button data-section="#experience">EXPERIENCE</button>
+          <button data-section="#contact">CONTACT</button>
+        </div>
       </div>
     </div>
-    </div>
 
 
-    <div class="info__content slide">
-      <div class="inner__box">
-      <figure class="figur__box-two" >
-        <div class="img__box">
-        <img  src="images/info/IMAGE.png"
-              alt="Слон на фоне заката">
-            </div>
-        <figcaption class="img__box-text-two">РЕКРУТЕР / HR
-    </figcaption>
-      </figure>
-      <div class="info__text">
-        <h3 class="info__text-titel">
-          OCBITA
-        </h3>
-        <p class="info__p">
-          ОНУ імені І. І. Мечнікова Психологія (2015-2019)
-Бакалавр
-        </p>
-      </div>
-    </div>
-    </div>
+    
 
 
-    <div class="info__content slide">
-      <div class="inner__box">
-      <figure class="figur__box-two" >
-        <div class="img__box">
-        <img  src="images/info/IMAGE.png"
-              alt="Слон на фоне заката">
-            </div>
-        <figcaption class="img__box-text-two">РЕКРУТЕР / HR
-    </figcaption>
-      </figure>
-      <div class="info__text">
-        <h3 class="info__text-titel">
-          ЗНАНИЯ ЯЗЫКОВ
-        </h3>
-        <ul class="lang__list">
-          <li>Українська-рідна</li>
-          <li>Російська-носій мови</li>
-          <li>Німецька-А1</li>
-          <li>Англійською-А1</li>
-        </ul>
-      </div>
-    </div>
-    </div>
+ 
+
+
   </div>
 </section>
 
@@ -251,9 +262,8 @@
   </div>
 </section>
 
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="js/app.js"></script>
 </body>
